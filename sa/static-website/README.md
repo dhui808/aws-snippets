@@ -14,6 +14,9 @@
     Step 11: Add alias records for your domain and subdomain
     
 ### Speeding up your website with Amazon CloudFront
+    
+    https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html
+    
     Step 1: Create a CloudFront distribution
         Need to specify Default root object - optional. If not psecified, the user has to enter the file name  
         for the root object (index.html).
@@ -24,6 +27,9 @@
         Under Route traffic to, choose Alias to CloudFront distribution.
         Under Choose distribution, choose the CloudFront distribution.
             Does not work. 
+            The distribution must include an alternate domain name that matches the domain name that you want 
+            to use for your URLs instead of the domain name that CloudFront assigned to your distribution.
+            Also CloudFront needs a SSL cert for this domain name.
         Choose Save.
         
 ### Automating static website setup with an AWS CloudFormation template
