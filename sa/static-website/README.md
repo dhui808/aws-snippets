@@ -23,6 +23,7 @@
         Under Record details, choose Edit record.
         Under Route traffic to, choose Alias to CloudFront distribution.
         Under Choose distribution, choose the CloudFront distribution.
+            Does not work. 
         Choose Save.
         
 ### Automating static website setup with an AWS CloudFormation template
