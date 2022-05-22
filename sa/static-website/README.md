@@ -11,6 +11,8 @@
 ### Configuring a static website using a custom domain registered with Route 53
     https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html
     
+    Create bucket: These bucket names must match your domain name or subdomain name exactly.
+    
     Step 11: Add alias records for your domain and subdomain
     
 ### Speeding up your website with Amazon CloudFront
@@ -33,4 +35,7 @@
         Choose Save.
         
 ### Automating static website setup with an AWS CloudFormation template
-    Create bucket: These bucket names must match your domain name or subdomain name exactly.
+    Deploying the solution
+        Use the AWS CloudFormation console to deploy the solution with default content, then upload your website content 
+            to Amazon S3.
+        Clone the solution to your computer to add your website content. Then, deploy the solution with the AWS CLI.
