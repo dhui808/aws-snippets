@@ -39,3 +39,7 @@
         Use the AWS CloudFormation console to deploy the solution with default content, then upload your website content 
             to Amazon S3.
         Clone the solution to your computer to add your website content. Then, deploy the solution with the AWS CLI.
+
+    Samples:
+        https://s3.amazonaws.com/solution-builders-us-east-1/amazon-cloudfront-secure-static-site/latest/main.yaml
+        
