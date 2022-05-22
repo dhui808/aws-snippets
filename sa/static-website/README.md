@@ -18,5 +18,7 @@
         Need to specify Default root object - optional. If not psecified, the user has to enter the file name  
         for the root object (index.html).
         404 error from the origin (and potentially other non-200 statuses, are not supported?)
+    Step 2: Update the alias record in Route 53 to point to the new CloudFront distribution.
+    
 ### Automating static website setup with an AWS CloudFormation template
     Create bucket: These bucket names must match your domain name or subdomain name exactly.
