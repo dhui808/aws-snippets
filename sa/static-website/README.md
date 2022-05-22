@@ -19,6 +19,11 @@
         for the root object (index.html).
         404 error from the origin (and potentially other non-200 statuses, are not supported?)
     Step 2: Update the alias record in Route 53 to point to the new CloudFront distribution.
-    
+        Under Records, select the A record that you created for your subdomain.
+        Under Record details, choose Edit record.
+        Under Route traffic to, choose Alias to CloudFront distribution.
+        Under Choose distribution, choose the CloudFront distribution.
+        Choose Save.
+        
 ### Automating static website setup with an AWS CloudFormation template
     Create bucket: These bucket names must match your domain name or subdomain name exactly.
