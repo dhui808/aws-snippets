@@ -9,7 +9,10 @@
     Step 6: Configure an error document
     Step 7: Test your website endpoint
 ### Configuring a static website using a custom domain registered with Route 53
-
+    https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-custom-domain-walkthrough.html
+    
+    Step 11: Add alias records for your domain and subdomain
+    
 ### Speeding up your website with Amazon CloudFront
 
 ### Automating static website setup with an AWS CloudFormation template
