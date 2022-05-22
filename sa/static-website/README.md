@@ -14,6 +14,9 @@
     Step 11: Add alias records for your domain and subdomain
     
 ### Speeding up your website with Amazon CloudFront
-
+    Step 1: Create a CloudFront distribution
+        Need to specify Default root object - optional. If not psecified, the user has to enter the file name  
+        for the root object (index.html).
+        404 error from the origin (and potentially other non-200 statuses, are not supported?)
 ### Automating static website setup with an AWS CloudFormation template
     Create bucket: These bucket names must match your domain name or subdomain name exactly.
