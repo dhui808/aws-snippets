@@ -12,3 +12,15 @@
     Test:
         https://91zg07safk.execute-api.us-east-1.amazonaws.com/Prod/hello
         
+    Resources created:
+        IAM Role
+        ApiGateway
+        Lambda
+        S3
+        ClounFormation Stack
+      
+### Process DynamoDB events
+    sam init  --location gh:aws-samples/cookiecutter-aws-sam-dynamodb-python  --no-input
+    Step 3: Package the application
+        
+        aws s3 mb s3://dynamodb-event-bucket
