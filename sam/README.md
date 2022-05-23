@@ -29,3 +29,4 @@
         sam package --template-file template.yaml --output-template-file packaged.yaml --s3-bucket my-dynamodb-event-bucket
     Step 4: Deploy the application
         sam deploy --template-file packaged.yaml --stack-name sam-dynamodb-app --capabilities CAPABILITY_IAM --region us-east-1
+        The --capabilities parameter allows AWS CloudFormation to create an IAM role.
