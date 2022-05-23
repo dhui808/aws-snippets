@@ -34,3 +34,6 @@
         Go to the Metrics tab of the table, and choose View all CloudWatch metrics. 
         In the CloudWatch console, choose Logs to be able to view the log output.
         
+### Build a Serverless Web Application
+    aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/
+    
