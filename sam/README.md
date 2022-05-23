@@ -25,4 +25,6 @@
     sam init  --location gh:aws-samples/cookiecutter-aws-sam-dynamodb-python  --no-input
     Step 3: Package the application
         
-        aws s3 mb s3://dynamodb-event-bucket
+        aws s3 mb s3://my-dynamodb-event-bucket
+        sam package --template-file template.yaml --output-template-file packaged.yaml --s3-bucket my-dynamodb-event-bucket
+        
