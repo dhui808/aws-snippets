@@ -30,3 +30,7 @@
     Step 4: Deploy the application
         sam deploy --template-file packaged.yaml --stack-name sam-dynamodb-app --capabilities CAPABILITY_IAM --region us-east-1
         The --capabilities parameter allows AWS CloudFormation to create an IAM role.
+    To test the serverless application in the AWS Cloud, Insert a record into the table that you just created.
+        Go to the Metrics tab of the table, and choose View all CloudWatch metrics. 
+        In the CloudWatch console, choose Logs to be able to view the log output.
+        
