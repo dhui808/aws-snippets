@@ -18,7 +18,9 @@
         Lambda
         S3
         ClounFormation Stack
-      
+    
+    When deleting CloudFormation, have to manually empty and delete the sam cli managed s3 bucket and CloudFormation
+    
 ### Process DynamoDB events
     sam init  --location gh:aws-samples/cookiecutter-aws-sam-dynamodb-python  --no-input
     Step 3: Package the application
