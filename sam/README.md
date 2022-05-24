@@ -53,5 +53,22 @@
         Verify email
         Sign in
         Also needs ArcGIS account
-        
+    
+    Serverless Service Backend
+    Create a new DynamoDB table: Rides
+        Partition key: RideId
+    Create an IAM role for the Lambda function: WildRydesLambda
+        grants your Lambda function permission to write logs to Amazon CloudWatch Logs 
+        and access to write items to your DynamoDB table.
+        policy:AWSLambdaBasicExecutionRole
+        Create inline policy: DynamoDBWriteAccess
+            Choose a service: DynamoDB
+            add actions: PutItem
+            Resources: Add ARN
+            
+    Create a Lambda for Handling Requests: RequestUnicorn, use the WildRydesLambda IAM role
+    Validate the Lambda function
+        Test -> Configure test event -> TestRequestEvent
+        Copy and paste the sample test event into the editor
+        Test
     
