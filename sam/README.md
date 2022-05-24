@@ -39,3 +39,19 @@
     aw configure
     Create Git Repository "wildrydes-site"
     Enable web hosting with AWS Amplify Console
+    Create Cognito User Pool: WildRydes
+        Pool Id us-east-1_8YflySxfd
+    Create app client "WildRydesWebApp" and add it to the user pool
+        App client id: 2q17qvf55mbal7uvlgbp81cs0h
+    Update the website config
+        userPoolId
+        userPoolClientId
+        region
+    Validate the config changes:
+        Visit /register.html 
+        Register email
+        Verify email
+        Sign in
+        Also needs ArcGIS account
+        
+    
