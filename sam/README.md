@@ -95,5 +95,10 @@
     Deploy Your API
         From the Amazon API Gateway console, choose Actions, Deploy API
         Invoke URL becomes available
+        Invoke URL: https://zr46gluakl.execute-api.us-east-1.amazonaws.com/prod
+    Update the Website Config
+        invokeUrl
+    Validate the Implementation
+        Visit /ride.html
+        However, why ArGIS pops up?
         
-    
