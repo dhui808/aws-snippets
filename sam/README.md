@@ -38,4 +38,4 @@
     aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/
     aw configure
     Create Git Repository "wildrydes-site"
-    Enable web hosting with AWS Amplify
+    Enable web hosting with AWS Amplify Console
