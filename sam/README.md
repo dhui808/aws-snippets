@@ -39,6 +39,8 @@
     aw configure
     Create Git Repository "wildrydes-site"
     Enable web hosting with AWS Amplify Console
+    
+    User Management
     Create Cognito User Pool: WildRydes
         Pool Id us-east-1_8YflySxfd
     Create app client "WildRydesWebApp" and add it to the user pool
@@ -65,10 +67,33 @@
             Choose a service: DynamoDB
             add actions: PutItem
             Resources: Add ARN
-            
     Create a Lambda for Handling Requests: RequestUnicorn, use the WildRydesLambda IAM role
     Validate the Lambda function
         Test -> Configure test event -> TestRequestEvent
         Copy and paste the sample test event into the editor
         Test
+    
+    Deploy a RESTful API
+    Create a New REST API from API Gateway: WildRydes
+        Edge optimized selected in the Endpoint Type
+    Create a Cognito User Pools Authorizer: WildRydes
+        API: WildRydes -> Authorizers -> Create New Authorizer
+        Type: Cognito
+        Cognito User Pool: WildRydes
+        Authorization for the Token Source
+        Verify your authorizer configuration
+    Create a new resource and method
+        Create called a new resource /ride within your API. 
+        Then create a POST method for that resource and configure it to use a Lambda proxy integration 
+        backed by the RequestUnicorn function
+        Select Lambda Function for the integration type
+        Check the box for Use Lambda Proxy integration
+        RequestUnicorn, for Lambda Function
+        o. Choose on the Method Request card.
+        p. Choose the pencil icon next to Authorization.
+        q. Select the WildRydes Cognito user pool authorizer from the drop-down list, and click the checkmark icon.
+    Deploy Your API
+        From the Amazon API Gateway console, choose Actions, Deploy API
+        Invoke URL becomes available
+        
     
