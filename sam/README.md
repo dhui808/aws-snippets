@@ -104,4 +104,16 @@
     Validate the Implementation
         Visit /ride.html
         However, why ArGIS pops up?
-        
+### AWS Identity Workshop
+    https://catalog.us-east-1.prod.workshops.aws/workshops/bc60f0b2-991f-4df9-933c-234a67e75179/en-US/introduction
+    
+    git clone https://github.com/dhui808/cognito-identity-management.git 
+
+    npm install -g yarn
+    cd cognito-identity-management/website/
+    yarn install
+    
+    Run the website locally
+    yarn start
+    
+    
